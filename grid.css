@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i,700,700i&display=swap");
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.item {
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 8px;
+  border: 2px solid #EEEEEE;
+  transition: all 100ms linear;
+  display: block;
+  position: relative;
+}
+.item:hover {
+  border-color: #2196F3;
+  background-color: #E0EEFA;
+  cursor: pointer;
+}
+.item .label {
+  font-size: 0.875rem;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 0.87);
+  margin-top: 4px;
+}
+.item .imgContainer {
+  background-color: #f3f3f3;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 186/124;
+  display: grid;
+}
+.item img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+.item .tag-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 8px;
+}
+.item .tag {
+  display: inline-block;
+  font-size: 0.813rem;
+  line-height: 1.538em;
+  color: #2196F3;
+  background-color: rgba(33, 150, 243, 0.12);
+  padding: 2px 12px;
+  border-radius: 12px;
+}
+.item .tag:hover {
+  background-color: #2196F3;
+  color: #fff;
+}
